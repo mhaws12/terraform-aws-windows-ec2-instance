@@ -1,7 +1,7 @@
 ####################################
 ## Application Module - Variables ##
 ####################################
-
+#TEST#
 # Application definition
 
 variable "app_name" {
