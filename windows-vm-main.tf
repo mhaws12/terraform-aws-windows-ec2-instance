@@ -54,7 +54,7 @@ resource "aws_instance" "windows-server" {
 
 # Create Elastic IP for the EC2 instance
 resource "aws_eip" "windows-eip" {
-  vpc  = true
+  domain  = vpc
   tags = {
     Name        = "${lower(var.app_name)}-${var.app_environment}-windows-eip"
     Environment = var.app_environment
